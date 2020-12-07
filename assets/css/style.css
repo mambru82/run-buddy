@@ -31,15 +31,19 @@ body {
   header nav {
       margin: 7px 0;
   }
-  
-  header nav ul li {
-    display: inline; /*turns a block element into an inline element*/
+
+  header nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; /*aligns items on the x-axis when flex-direction is set to row*/
+      align-items: center; /*aligns items on the y or vertical axis (when flex-direction is row)*/
+      list-style: none;
   }
 
   header nav ul li a {
       margin: 0 30px;
       font-weight: lighter;
-      font-size: 22px;
+      font-size: 1.55vw;
   }
 
   footer {
